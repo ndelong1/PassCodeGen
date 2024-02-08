@@ -54,6 +54,10 @@ public class PassCode {
 
         // Convert each CHAR into Binary (A = 01000001)
 
+        for (int i = 0; i < output.length; i++) {
+
+        }
+
         // From 'Key' add/subtract/multiply (randomly) Binary Arrays (stringBiArray[0] +
         // - * keyBiArray[0])
         // STRING by the KEY S+K, S-K, S*K

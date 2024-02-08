@@ -29,28 +29,38 @@
 import java.util.Scanner;
 
 public class PassCode {
-    public static void main(String[] args){
-        //----------------My Variables-------------
+    public static void main(String[] args) {
+        // ----------------My Variables-------------
         String strUserInput;
-        String strOutput;
+        char[] output;
         String[] binaryUI;
 
-        //--------------User Input------------------
+        // --------------User Input------------------
         Scanner input = new Scanner(System.in);
         System.out.print("Input a string (8-16 characters long, symbols and numbers) >> ");
         strUserInput = input.nextLine();
 
-        //create an ARRAY of the string
+        input.close();
 
-        //Convert each CHAR into Binary (A = 01000001)
+        // delete any spaces that the user input
+        strUserInput = strUserInput.replaceAll("\\s", "");
 
-        //From 'Key' add/subtract/multiply (randomly) Binary Arrays (stringBiArray[0] + - * keyBiArray[0])
-            //STRING by the KEY  S+K, S-K, S*K
+        // System.out.println(strUserInput); // test...
+        // create an ARRAY of the string
+        output = strUserInput.toCharArray();
 
+        // System.out.println(output[0]); //EVIL DO NOT LOOK!
+        // System.out.print(output[1]); //testy..
 
-        //Convert each new binary into char print new array as string.
-            //char[] a = ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"];
-            //String b = String(a); converts the array 'a' into a String named 'b'
+        // Convert each CHAR into Binary (A = 01000001)
+
+        // From 'Key' add/subtract/multiply (randomly) Binary Arrays (stringBiArray[0] +
+        // - * keyBiArray[0])
+        // STRING by the KEY S+K, S-K, S*K
+
+        // Convert each new binary into char print new array as string.
+        // char[] a = ["H", "e", "l", "l", "o", " ", "W", "o", "r", "l", "d"];
+        // String b = String(a); converts the array 'a' into a String named 'b'
 
     }
 }
